@@ -21,24 +21,6 @@ body {
   background: linear-gradient(to bottom right, #f9f9f9, #eafaf6);
   line-height: 1.6;
 }
-.portfolio-label {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #004d40;
-  margin-right: auto;
-  padding: 10px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-a {
-  color: #004d40;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-a:hover {
-  color: #00796b;
-}
 
 .container {
   width: 90%;
@@ -66,11 +48,16 @@ h1 {
 
 /* === Navigation === */
 .topnav {
-  margin: 20px;
-  text-align: right;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 17px 0;
 }
 
 .topnav a {
+  /* text-align: right; */
   margin: 0 15px;
   font-size: 1rem;
   font-weight: 500;
@@ -82,7 +69,29 @@ h1 {
   background-color: rgba(0, 191, 166, 0.3);
   color: #004d40;
 }
+.topnav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.portfolio-label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #004d40;
+  /* margin-left: auto; */
+  /* padding: 10px; */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
 
+a {
+  color: #004d40;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #00796b;
+}
 /* === Hero Section === */
 .hero {
   background: linear-gradient(to right, rgba(0, 191, 166, 0.15), rgba(0, 191, 255, 0.15));
@@ -276,12 +285,15 @@ button:hover {
   <!-- ====== Navigation ====== -->
   <nav class="topnav">
     <div class="container">
-      <span class="portfolio-label">Portfolio</span>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <!-- <div class="portfolio-label">Dileep Kamana</div> -->
+      <div class="portfolio-label">Dileep Kamana</div>
+      <div class="antags">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
   </nav>
 
