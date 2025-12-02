@@ -8,12 +8,5 @@
     <priority>1.0</priority>
   </url>
 
-  <url>
-    <loc>https://dileepkamana.netlify.app</loc>
-    <lastmod>2025-10-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <!-- Add more <url> blocks here for other pages you have, like about.html, portfolio.html, contact.html, etc. -->
 </urlset>
