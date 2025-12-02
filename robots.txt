@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dileepkamana.netlify.app/sitemap.xml
